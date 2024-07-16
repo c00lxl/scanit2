@@ -1,18 +1,3 @@
-name: Unzip File
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  unzip:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Unzip file
-      run: |
-        unzip 001php_001files.zip -d ./unzipped_files
+- uses: montudor/action-zip@v1
+  with:
+    args: zip -qq -r 001php_001files.zip dir
