@@ -1,3 +1,4 @@
 - uses: montudor/action-zip@v1
   with:
-    args: zip -qq -r 001php_001files.zip dir
+    args: unzip -qq 001php_001files.zip
+ -d 001php_001files
