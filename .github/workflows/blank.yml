@@ -1,4 +1,8 @@
-- uses: montudor/action-zip@v1
+            - name: action-zip
+  # You may pin to the exact commit or the version.
+  # uses: montudor/action-zip@0852c26906e00f8a315c704958823928d8018b28
+  uses: montudor/action-zip@v1.0.0
   with:
-    args: unzip -qq 001php_001files.zip
- -d 001php_001files
+    # See montudor/action-zip README.md for more info
+    args: # optional
+          
